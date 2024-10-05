@@ -1,0 +1,46 @@
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #4ad3e8;
+}
+
+a {
+    color: #4ad3e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+article {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
