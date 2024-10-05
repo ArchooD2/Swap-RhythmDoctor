@@ -57,10 +57,13 @@ main {
 ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Three columns */
+    gap: 20px; /* Space between grid items */
 }
 
 li {
-    margin-bottom: 30px;
+    margin: 0; /* Remove margin since grid gap handles spacing */
 }
 
 /* Character Card */
@@ -70,6 +73,7 @@ li {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
 }
 
 .character-card:hover {
@@ -89,4 +93,16 @@ li {
 /* Better Spacing */
 section {
     margin-bottom: 40px;
+}
+/* Responsive Layout */
+@media (max-width: 768px) {
+    ul {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
 }
