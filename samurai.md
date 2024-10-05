@@ -1,4 +1,3 @@
-
 ---
 layout: character
 title: Swap!Samurai
